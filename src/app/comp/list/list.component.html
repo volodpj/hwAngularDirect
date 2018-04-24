@@ -1,0 +1,16 @@
+<div class="container">
+  <div>
+    <div class="boxList" *ngFor = "let element of punctList">
+      <p>{{element}}</p>
+      
+    </div>
+    <button (click) = "addNewSkill()">Add new skill</button>
+  </div>
+
+  <div class="creatPunct" *ngIf = "addSkill">
+    <input type="text" [(ngModel)] = "newPunct">
+    <button (click) = "addPunct()">Add</button>
+  </div>
+
+</div>
+
